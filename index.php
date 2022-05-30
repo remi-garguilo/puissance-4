@@ -45,7 +45,6 @@ if(isset($_POST['register'])){
     <main>
         <?php require('view/errors.php');?>
         <div class="container">
-            <?php if(!Security::isConnect()){?>
                 <div class="container-fieldset">
                         <form action="" method="post">
                             <fieldset>
@@ -75,12 +74,6 @@ if(isset($_POST['register'])){
                             </fieldset>
                         </form>
                     </div>
-                <?php }
-                else{ ?>
-                    <h1>
-                        Bonjour <?php echo $_SESSION['user']['login'] ?> !!!
-                    </h1>
-                <?php } ?>
         </div>
     </main>
     <?php require_once(__DIR__ . '/view/footer-index.php'); ?>

@@ -41,7 +41,7 @@ class User_model{
                 $_SESSION["user"]["id"] = $results["id"];
                 $_SESSION["user"]["login"] = $results["login"];
                 Toolbox::addMessageAlert("Connexion faite.", Toolbox::GREEN_COLOR);
-                header("Location: index.php");
+                header("Location: view/puissance4.php");
                 exit();
             }
             else{
